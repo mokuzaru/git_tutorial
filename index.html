@@ -4,82 +4,82 @@
 <body>
 
 <p>
-Guia de comandos de Github
---------------------------
+Guia de comandos de Github<br>
+--------------------------</p>
 
 
-Luego de seguir el tutorial de este link : https://www.taringa.net/+info/como-configurar-github-en-pc_h15ru
+Luego de seguir el tutorial de este link : https://www.taringa.net/+info/como-configurar-github-en-pc_h15ru<br><br><br>
 
-La pc está lista para manejar repositorios.
+La pc está lista para manejar repositorios.<br><br>
 
-Existen dos posibilidades, que se inicie con un repositorio nuevo o uno que ya tiene archivos en el.
+Existen dos posibilidades, que se inicie con un repositorio nuevo o uno que ya tiene archivos en el.<br><br>
 
-En el caso de un repositorio nuevo (vacio).
-------------------------------------------
+En el caso de un repositorio nuevo (vacio).<br>
+------------------------------------------<br>
+<br>
+El primer paso(pc).<br>
 
-El primer paso(pc).
+crear una carpeta para almacenar todos los archivos del proyecto.<br><br>
 
-crear una carpeta para almacenar todos los archivos del proyecto.
+Luego usar git bash para moverse hasta la carpeta del proyecto.<br><br>
 
-Luego usar git bash para moverse hasta la carpeta del proyecto.
+///////////////////////////////////////////////////////////<br><br><br>
+Con ayuda del comando "cd".<br>
 
-///////////////////////////////////////////////////////////
-Con ayuda del comando "cd".
+Ejemplo:<br>
+<br>
+cd D:<br>
+<br>
+Sirve para moverse a la raiz de la particion de nombre D (si la hubiera)<br>
 
-Ejemplo:
+Ejemplo 2:<br>
+<br>
+cd C:\web<br>
+<br>
+Siver para movilizarse a la carpeta "web" que se encuentra en la unidad C (particion de disco duro)<br>
+<br>
+Comando "ls"<br>
+<br>
+Sirve para visualizar los archivos, carpetas u otros en la ruta actual<br>
 
-cd D:
+////////////////////////////////////////////////////////////////<br><br>
 
-Sirve para moverse a la raiz de la particion de nombre D (si la hubiera)
+*Con la ayuda de los comandos anteriores debemos situarnos en la carpeta previamente creada (proyecto).<br>
 
-Ejemplo 2:
+Luego creamos una instancia de git con el siguiente comandos<br>
+<br>
+git init<br>
+<br>
+a continuación configuraremos la conexión de la carpeta del proyecto con el repositorio en nuestra cuenta de github en la nube.<br>
+<br>
+git remote add origin git@github.com:nombreUsuario/nombreproyecto.git<br>
+<br>
+Luego de esto ya no necesitaremos los comandos anteriores (git) de nuevo ya que la carpeta del proyecto ya estara conectada con el proyecto en la nube.<br>
 
-cd C:\web
+Lo que sigue es enviar cambios, archivos, carpetas, imagenes, etc.<br>
 
-Siver para movilizarse a la carpeta "web" que se encuentra en la unidad C (particion de disco duro)
-
-Comando "ls"
-
-Sirve para visualizar los archivos, carpetas u otros en la ruta actual
-
-////////////////////////////////////////////////////////////////
-
-*Con la ayuda de los comandos anteriores debemos situarnos en la carpeta previamente creada (proyecto).
-
-Luego creamos una instancia de git con el siguiente comandos
-
-git init
-
-a continuación configuraremos la conexión de la carpeta del proyecto con el repositorio en nuestra cuenta de github en la nube.
-
-git remote add origin git@github.com:nombreUsuario/nombreproyecto.git
-
-Luego de esto ya no necesitaremos los comandos anteriores (git) de nuevo ya que la carpeta del proyecto ya estara conectada con el proyecto en la nube.
-
-Lo que sigue es enviar cambios, archivos, carpetas, imagenes, etc.
-
-Lo primero es añadir nuevos archivos
-
-git add .
-
-El anterior comnado es para añadir todos los archivos nuevos en la carpeta del proyecto
-
-git add <nombre_archivo>
-
-Este comando es para subir algun archivo en particular
-
-Luego es nombrar el commit (paquete de cambios que se enviarán al repositorio en la nube).
-
-git commit -m "nombre_de facil_identificación"
-
-Por ultimo es enviar los cambios al repositorio en la nube.
-
-git push origin -u master
-
------------------------------------------------------------------------------------------------------------
-
-En el caso de un repositorio con datos.
---------------------------------------
+Lo primero es añadir nuevos archivos<br>
+<br>
+git add .<br>
+<br>
+El anterior comnado es para añadir todos los archivos nuevos en la carpeta del proyecto<br>
+<br>
+git add <nombre_archivo><br>
+<br>
+Este comando es para subir algun archivo en particular<br>
+<br>
+Luego es nombrar el commit (paquete de cambios que se enviarán al repositorio en la nube).<br>
+<br>
+git commit -m "nombre_de facil_identificación"<br>
+<br>
+Por ultimo es enviar los cambios al repositorio en la nube.<br>
+<br>
+git push origin -u master<br>
+<br>
+-----------------------------------------------------------------------------------------------------------<br><br>
+<br>
+En el caso de un repositorio con datos.<br>
+--------------------------------------<br>
 
 
 <p>
