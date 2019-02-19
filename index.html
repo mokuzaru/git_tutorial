@@ -15,7 +15,7 @@
 
       Existen dos posibilidades, que se inicie con un repositorio nuevo o uno que ya tiene archivos en el.<br><br>
 
-      <h1>En el caso de un repositorio nuevo (vacio).</h1><br>
+      <h2><u>En el caso de un repositorio nuevo (vacio).</u></h2><br>
       <br>
       El primer paso(pc).<br>
 
@@ -77,8 +77,7 @@
       <i>git push origin -u master</i><br>
       <br>
       <br>
-      En el caso de un repositorio con datos.<br>
-      --------------------------------------<br>
+      <h2><u>En el caso de un repositorio con datos.</u></h2><br>
       <br>
       El primer paso(pc).<br>
 
@@ -124,7 +123,19 @@
       Recordar poner un nombre que ayude a la detección del cambio, para futuro seguimiento<br>
       <i>git push origin -u master</i><br>
       Enviar los cambios al repositorio del proyecto.<br>
-      
+    </p>
+    <p>
+      <h1>Como crear nuevas ramas (branches) y moverse entre ellas</h1>
+      <br>
+      Tener en cuenta que para crear una nueva rama se tiene que estar dentro de la carpeta del proyecto.<br>
+      Luego se ejecuta el siguiente comando<br>
+      <i>git checkout -b Nombre_rama</i><br><br>
+      y automaticamente aparecerá el nombre de la nueva rama en vez de la rama "master" al costado de la ruta.
+      En caso se quiera regresar a la rama master, ejecutar<br>
+
+      <i>git checkuot master</i><br><br>
+
+      De esta forma regresando a la rama "master", analogamente puedes moverte a cualquier rama, previamente creada, con el mismo comando cambiando "master" por la rama destino.<br>
     </p>
   </body>
 </html>
