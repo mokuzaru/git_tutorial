@@ -6,8 +6,7 @@
   <body>
 
     <p>
-      Guia de comandos de Github<br>
-      --------------------------<br><br>
+      <h1><strong><u>Guia de comandos de Github</u></strong></h1><br>
 
 
       Luego de seguir el tutorial de este link : https://www.taringa.net/+info/como-configurar-github-en-pc_h15ru<br><br><br>
@@ -16,8 +15,7 @@
 
       Existen dos posibilidades, que se inicie con un repositorio nuevo o uno que ya tiene archivos en el.<br><br>
 
-      En el caso de un repositorio nuevo (vacio).<br>
-      ------------------------------------------<br>
+      <h1>En el caso de un repositorio nuevo (vacio).</h1><br>
       <br>
       El primer paso(pc).<br>
 
@@ -26,17 +24,80 @@
       Luego usar git bash para moverse hasta la carpeta del proyecto.<br><br>
 
       ///////////////////////////////////////////////////////////<br><br><br>
-      Con ayuda del comando "cd".<br>
+      Con ayuda del comando "cd".
 
       Ejemplo:<br>
       <br>
-      cd D:<br>
+      <i>cd D:</i><br>
       <br>
       Sirve para moverse a la raiz de la particion de nombre D (si la hubiera)<br>
 
       Ejemplo 2:<br>
       <br>
-      cd C:\web<br>
+      <i>cd C:\web</i><br>
+      <br>
+      Siver para movilizarse a la carpeta "web" que se encuentra en la unidad C (particion de disco duro)<br>
+      <br>
+      <i>Comando "ls"</i><br>
+      <br>
+      Sirve para visualizar los archivos, carpetas u otros en la ruta actual<br>
+
+      ////////////////////////////////////////////////////////////////<br><br>
+
+      *Con la ayuda de los comandos anteriores debemos situarnos en la carpeta previamente creada (proyecto).<br>
+
+      Luego creamos una instancia de git con el siguiente comandos<br>
+      <br>
+      <i>git init</i><br>
+      <br>
+      a continuación configuraremos la conexión de la carpeta del proyecto con el repositorio en nuestra cuenta de github en la nube.<br>
+      <br>
+      <i>git remote add origin git@github.com:nombreUsuario/nombreproyecto.git</i><br>
+      <br>
+      Luego de esto ya no necesitaremos los comandos anteriores (git) de nuevo ya que la carpeta del proyecto ya estara conectada con el proyecto en la nube.<br>
+      Lo que sigue es enviar cambios, archivos, carpetas, imagenes, etc.<br>
+
+      Lo primero es añadir nuevos archivos<br>
+    <p>
+      <i>git add .</i>
+    </p>
+    <p>
+      El anterior comnado es para añadir todos los archivos nuevos en la carpeta del proyecto<br>
+      <br>
+      <i>git add <nombre_archivo></i><br>
+      <br>
+      Este comando es para subir algun archivo en particular<br>
+      <br>
+      Luego es nombrar el commit (paquete de cambios que se enviarán al repositorio en la nube).<br>
+      <br>
+      <i>git commit -m "nombre_de facil_identificación"</i><br>
+      <br>
+      Por ultimo es enviar los cambios al repositorio en la nube.<br>
+      <br>
+      <i>git push origin -u master</i><br>
+      <br>
+      <br>
+      En el caso de un repositorio con datos.<br>
+      --------------------------------------<br>
+      <br>
+      El primer paso(pc).<br>
+
+      crear una carpeta para almacenar todos los archivos del proyecto.<br><br>
+
+      Luego usar git bash para moverse hasta la carpeta del proyecto.<br><br>
+
+      ///////////////////////////////////////////////////////////<br><br><br>
+      Con ayuda del comando "cd".</p>
+    <p>
+      Ejemplo:<br>
+      <br>
+      <i>cd D:</i><br>
+      <br>
+      Sirve para moverse a la raiz de la particion de nombre D (si la hubiera)<br>
+
+      Ejemplo 2:<br>
+      <br>
+      <i>cd C:\web</i><br>
       <br>
       Siver para movilizarse a la carpeta "web" que se encuentra en la unidad C (particion de disco duro)<br>
       <br>
@@ -48,42 +109,22 @@
 
       *Con la ayuda de los comandos anteriores debemos situarnos en la carpeta previamente creada (proyecto).<br>
 
-      Luego creamos una instancia de git con el siguiente comandos<br>
-      <br>
-      git init<br>
-      <br>
-      a continuación configuraremos la conexión de la carpeta del proyecto con el repositorio en nuestra cuenta de github en la nube.<br>
-      <br>
-      git remote add origin git@github.com:nombreUsuario/nombreproyecto.git<br>
-      <br>
-      Luego de esto ya no necesitaremos los comandos anteriores (git) de nuevo ya que la carpeta del proyecto ya estara conectada con el proyecto en la nube.<br>
+      En este caso lo primero es descargar todos los archivos existentes en el repositorio en la nube.<br>
 
-      Lo que sigue es enviar cambios, archivos, carpetas, imagenes, etc.<br>
+      Esta acción se realiza con el siguiente comando:<br>
+      <br>
+      <i>git clone git@github.com:nombreusuario\nombre_repo.git</i><br>
+      <br>
+      Luego, si se quiere enviar algun cambio realizado al proyecto base en la nube, se siguen los siguientes pasos<br>
 
-      Lo primero es añadir nuevos archivos<br>
+      <i>git add .</i><br>
+      Para añadir los cambios realizados (todos)<br>
       <br>
-      git add .<br>
-      <br>
-      El anterior comnado es para añadir todos los archivos nuevos en la carpeta del proyecto<br>
-      <br>
-      git add <nombre_archivo><br>
-      <br>
-      Este comando es para subir algun archivo en particular<br>
-      <br>
-      Luego es nombrar el commit (paquete de cambios que se enviarán al repositorio en la nube).<br>
-      <br>
-      git commit -m "nombre_de facil_identificación"<br>
-      <br>
-      Por ultimo es enviar los cambios al repositorio en la nube.<br>
-      <br>
-      git push origin -u master<br>
-      <br>
-      -----------------------------------------------------------------------------------------------------------<br><br>
-      <br>
-      En el caso de un repositorio con datos.<br>
-      --------------------------------------<br>
-
-
+      <i>git commit -m "nombre del commit"</i><br>
+      Recordar poner un nombre que ayude a la detección del cambio, para futuro seguimiento<br>
+      <i>git push origin -u master</i><br>
+      Enviar los cambios al repositorio del proyecto.<br>
+      
     </p>
   </body>
 </html>
